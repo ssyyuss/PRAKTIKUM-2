@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan no 6</title>
+  <link rel="icon" type="img/png" href="icon.png"16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href="css/main.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      font: 1em sans-serif;
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    td {
+      border: none;
+    }
+
+    td:first-child {
+      width: 30%; /* Mengatur lebar kolom pertama */
+      white-space: nowrap; /* Mencegah wrap teks */
+    }
+
+    td:last-child {
+      width: 70%; /* Mengatur lebar kolom kedua */
+    }
+
+    fieldset {
+      width: 40%; /* Mengatur lebar fieldset */
+      margin: 0 auto; /* Posisi tengah */
+    }
+
+    legend {
+      font-size: 1.2em; /* Ukuran huruf legenda */
+      margin-bottom: 5px; /* Mengurangi jarak bawah */
+    }
+
+    .button-container {
+      text-align: center; /* Mengatur posisi tombol di tengah */
+      margin-top: 20px; /* Menambahkan ruang atas */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      width: auto; /* Lebar tombol mengikuti konten */
+      margin: 0 10px; /* Jarak antara tombol */
+      padding: 10px 20px; /* Padding tombol */
+      cursor: pointer; /* Mengubah cursor menjadi tangan saat dihover */
+    }
+  </style>
+</head>
+<body>
+<form action="contact.php" method="POST">
+  <fieldset>
+    <legend>Form Pendaftaran Mahasiswa Baru</legend>
+    <table>
+      <tr>
+        <td nowrap>
+          <strong>Nama Lengkap</strong>
+        </td>
+        <td>
+          <input type="text" name="nama_lengkap" required>
+        </td>
+      </tr>
+      <tr>
+        <td width="500px" nowrap>
+          <strong>Tempat Tanggal Lahir</strong>
+        </td>
+        <td width="500px">
+          <input type="text" name="tempat_lahir" required>
+          <input type="date" name="tanggal_lahir" required>
+        </td>
+      </tr>
+      <tr>
+        <td width="500px" nowrap>
+          <strong>Agama</strong>
+        </td>
+        <td>
+          <select id="agama" name="agama" required>
+            <option value="">-PILIH-</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="500px" nowrap>
+          <strong>Jenis Kelamin</strong>
+        </td>
+        <td>
+          <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+          <label for="laki_laki">Laki-laki</label>
+          <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+          <label for="perempuan">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td width="500px" nowrap>
+          <strong>No.Ijazah SMA/MA</strong>
+        </td>
+        <td width="500px">
+          <input type="text" name="no_ijazah" required>
+        </td>
+      </tr>
+      <tr>
+        <td width="500px"nowrap>
+            <strong>Foto (Ukuran File Maks. 20 KB)</strong>
+        </td>
+        <td>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px"nowrap>
+            <strong>Nama Ayah</strong>
+        </td>
+        <td>
+            <input type="text" name="nama_ayah" required>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px"nowrap>
+            <strong>Nama Ibu</strong>
+        </td>
+        <td>
+            <input type="text" name="nama_ibu" required>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px"nowrap>
+            <strong>Alamat Rumah</strong>
+        </td>
+        <td>
+            <textarea id="alamat_rumah" name="alamat_rumah" rows="5" cols="50" required></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px" nowrap>
+            <strong>No.telp</strong>
+        </td>
+        <td>
+            <input type="text" name="no_telp" required>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px" nowrap>
+            <strong>Nama Sekolah Asal</strong>
+        </td>
+        <td>
+            <textarea id="nama_sekolah_asal" name="nama_sekolah_asal" rows="5" cols="50"required></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px"nowrap>
+            <strong>Jurusan Dipilih</strong>
+        </td>
+        <td>
+            <select id="jurusan_dipilih" name="Jurusan Dipilih" required>
+                <option value="">Pilih Jurusan</option>
+                <option value="Komputerisasi Akuntansi">Komputerisasi Akuntansi</option>
+                <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+                <option value="Teknik Komputer Kontrol">Teknik Komputer Kontrol</option>
+                <option value="Teknik Listrik">Teknik Listrik</option>
+                <option value="Mesin Otomotif">Mesin Otomotif</option>
+                <option value="Perkeretaapian">Perkeretaapian</option>
+                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                <option value="Akuntansi">Akuntansi</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td width="500px"nowrap>
+            <strong>Tahu Informasi ini dari :</strong>
+        </td>
+        <td>
+            <input type="checkbox" id="koran" name="info_dari" value="Koran" required>
+            <label for="koran">Koran</label>
+            <input type="checkbox" id="Website" name="info_dari" value="Website" required>
+            <label for="Website">Website</label>
+            <input type="checkbox" id="televisi" name="info_dari" value="televisi" required>
+            <label for="televisi">Televisi</label>
+            <input type="checkbox" id="radio" name="info_dari" value="radio" required>
+            <label for="radio">Radio</label>
+            <input type="checkbox" id="teman" name="info_dari" value="temen" required>
+            <label for="teman">Teman</label>
+        </td>
+    </tr>
+    </table>
+    <div class="button-container">
+        <input type="submit" value="Daftar">
+        <input type="reset" value="Batal">
+    </div>
+</fieldset>
+</form>
+</body>
+</html> 

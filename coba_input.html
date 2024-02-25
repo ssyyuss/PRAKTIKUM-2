@@ -2,24 +2,86 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Tipe  input></title>
-        <link rel="icon" type="img/png" href="icon.png" sizes="16x16" />
-        <meta name="viewport" content="widht=device-width, initial-scaled">
+        <title>Tipe input </title>
+        <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
-        <label for="username"> type "text" :</label><br>
-        <input type="text" id="username" name="username"><br>
+
+        <label for="username"> type "text" </label><br>
+        <input type="text" id="username" name="username"></br>
         <label for="pwd">type "password"</label><br>
-        <input type="password" id="pwd" name="pwd"><br>
+        <input type="password" id="pwd" name="pwd"</br>
 
         <br>
-
         <hr>
         <h3>Uji coba 2</h3>
-        <input type="radio" id="html" value="HTML" name="submit"> <label for="html">HTML</label><br>
+        <input type="radio" id="html" value="HTML" name="subject"> <label for="html">HTML</label><br>
         <input type="radio" id="css" value="CSS" name="subject"> <label for="css">CSS</label><br>
         <input type="radio" id="javascript" value="JavaScript" name="subject"> <label for="JavaScript">JavaScript</label>
-        <p> Kesimpulannya jika menggunakan atribut name yang sama maka dari pilihan yang diberikan, user hanya bisa memilih 1 opsi. Namun jika menggunakan atribut name yang berbeda maka user bisa memilih lebih dari 1 opsi.</p>
-    
+        <p>Kesimpulannya jika menggunakan atribut name yang sama maka dari pilihan yang diberikan, user hanya bisa memilih 1 opsi. Namun jika menggunakan atribut name yang berbeda maka user bisa memilih lebih dari 1 opsi. Pada kesempatan kali ini, saya menerapkan atribut name yang sama. </p>
+
+        <h3> Uji Coba 3</h3>
+        <input type="checkbox" id="id1" name="1" value="bike">
+        <label for="id1">I have a bike </label><br>
+        <input type="checkbox" id="id2" name="2" value="car"> 
+        <label for="id2">I have a car </label><br>
+        <input type="checkbox" id="id3" name="3" value="boat">
+        <label for="id3">I have a boat </label>
+
+        <p> Penggunaan kode ini untuk menampilkan checkboxdi pemrograman HTML.</p>
+
+        <h3> Uji Coba 4</h3>
+        <label for="favcolor" >pilih warna dengan type="color" :</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <label for="b" > pilih tanggal dengan type="date" :</label>
+        <input  type="date" id="b" name="tanggal"><br>
+        <input type="button" onclick="alert('hello world')" value="click me!"><br>
+
+        <p> Penggunaan kode ini untuk menampilkan color picker atau pemilihan warna dan inputan untuk memasukan bulan, tanggal, dan tahun. serta menampilkan tombol yang jika diklik akan menampilkan popup alert berisi tulisan 'Hello World' </p>
+
+        <h3>Uji Coba 5</h3>
+        <label for="birthdayme">input dengan type datetime-local:</label>
+        <input type="datetime-local" id="birthdayme" name="birthdayme"><br>
+        <label for="bdaymonth">Input dengan type month :</label>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br>
+        <label for="email">Enter your email :</label>
+        <input type="email" id="email" name="email"><br>
+
+        <p>Penggunaan kode ini adalah untuk memasukan input bulan, tanggal, tahun, dan jam. Kode ini juga akan menampilkan pemilihan bulan dan tahun. Dan kode ini akan menampilkan kolom pengisian untuk email yang dapat diisi oleh user.</p>
+
+        <h3>Uji Coba 6</h3>
+        <input type="image" src="icon.png" alt="submit" width="48" height="48"><br>
+        <label for="myfile":>Pilih file</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <input type="hidden" id="custId" name="custId" value="3487"><br>
+
+        <p>Penggunaan kode ini untuk menampilkan logo di dalam halaman, dan untuk mengupload file.</p>
+
+        <h3> Uji Coba 7</h3>
+        <label for="quantity">quantity (between 1 dan 5 ) :</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+        <label for="vol"> volume (between 0 dan 50 ) :</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+
+        <p>Penggunaan kode ini untuk membuat tampilan input kode yang berbeda. Cara 1, input yang diketik oleh user, sedangkan cara 2, input dengan menggunakan sistem slider. </p>
+
+        <h3>Uji Coba 8</h3>
+        <label for="homepage" > Add your homepage :</label>
+        <input type="url" id="homepage" name="homepage"><br>
+        <label for="gsearch">Search Google :</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+        <label for="ph"> Enter your phone number :</label>
+        <input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+        <p>Penggunaan kode ini untuk memberikan kolom inputan user.</p>
+
+        <h3>Uji Coba 9</h3>
+        <label for="appt">select a time :</label>
+        <input type="time" id="appt" name="appt"><br>
+        <label for="week"> select a week :</label>
+        <input type="week" id="week" name="week"><br>
+
+        <p>Penggunaan kode ini digunakan untuk pemilihan waktu dan pemilihan minggu dengan format minggu ke... tahun...  </p>
     </body>
 </html>

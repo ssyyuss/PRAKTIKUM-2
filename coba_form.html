@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Sederhana</title>
+        <link rel="icon" type="img/png" href="icon.png" sizes="16x16" />
+        <meta name="viewport" content="width device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <label for="depan">Nama Depan:</label'><br>
+            <input type="text" id="depan" name ="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama Belakang:</label><br>
+            <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+            <input type="submit" value="Kirim ">
+            <input type="reset" value="Reset">
+        </form>
+        <p>Setelah user mengklik tombol kirim, data akan dikirimkan ke halaman /action_page.php</p>
+
+        <form action="/action_page.php" method="post" target="_blank">
+            <label for="depan">Nama Depan:</label'><br>
+                <input type="text" id="depan" name ="i_name" value="Budi"><br>
+                <label for="n_belakang">Nama Belakang:</label><br>
+                <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+                <input type="submit" value="Kirim ">
+                <input type="reset" value="Reset">
+        </form>
+        <p>data akan dikirim ke dalam tab baru dengan penggunaan ("_blank")</p>
+            
+        <form action="/action_page.php" method="get" target="_self">
+            <label for="depan">Nama Depan:</label'><br>
+                <input type="text" id="depan" name ="i_name" value="Budi"><br>
+                <label for="n_belakang">Nama Belakang:</label><br>
+                <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+                <input type="submit" value="Kirim ">
+                <input type="reset" value="Reset">
+        </form>
+        <p>Tampilan akan mengirim ke tab yang sama dengan penggunaan ("_self").</p>
+    </body>
+</html>
